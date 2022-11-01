@@ -18,7 +18,7 @@ const data = [
       "Nomadscode did an amazing job! They were able to translate exactly my needs into the perfect website.",
     avatar: amongcreativesCircle,
     name: "Among Creatives",
-    designation: "@amongcreatives",
+    designation: "Fashion photographer",
     review: 5,
   },
   {
@@ -27,8 +27,8 @@ const data = [
     description:
       "Pleasant communication, delivers as agreed and works very accurately. Highly recommended!",
     avatar: internetlabCircle,
-    name: "Internetlab",
-    designation: "internet-lab.nl",
+    name: "Ricky R.",
+    designation: "Web developer",
     review: 5,
   },
   {
@@ -48,7 +48,7 @@ const data = [
       "It was quick to build the website, and after just a few weeks our website was up and running.",
     avatar: nextmeridianexpeditionCircle,
     name: "Next Meridian Expedition",
-    designation: "@nextmeridian.expedition",
+    designation: "World travellers",
     review: 5,
   },
 ];
