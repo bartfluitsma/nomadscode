@@ -5,51 +5,51 @@ import Rating from "components/rating";
 import ButtonGroup from "components/button-group";
 import Carousel from "react-multi-carousel";
 
-import Avatar1 from "assets/testimonial/avatar1.png";
-import Avatar2 from "assets/testimonial/avatar2.png";
-import Avatar3 from "assets/testimonial/avatar3.png";
-import Avatar4 from "assets/testimonial/avatar4.png";
+import amongcreativesCircle from "assets/testimonial/amongcreatives-circle.png";
+import internetlabCircle from "assets/testimonial/internetlab-circle.png";
+import nextmeridianexpeditionCircle from "assets/testimonial/nextmeridianexpedition-circle.png";
+import martCircle from "assets/testimonial/mart-circle.png";
 
 const data = [
   {
     id: 1,
     title: "Fast without any glitch!",
     description:
-      "Bart did an amazing job! he was able to translate exactly my needs into the perfect website. The communication and process went super smooth...",
-    avatar: Avatar1,
+      "Nomadscode did an amazing job! They were able to translate exactly my needs into the perfect website.",
+    avatar: amongcreativesCircle,
     name: "Among Creatives",
     designation: "@amongcreatives",
     review: 5,
   },
   {
     id: 2,
-    title: "Design Quality & performance",
+    title: "Highly recommended.",
     description:
-      "Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.",
-    avatar: Avatar2,
-    name: "Denny Hilguston",
-    designation: "@denny.hil",
+      "Pleasant communication, delivers as agreed and works very accurately. Highly recommended!",
+    avatar: internetlabCircle,
+    name: "Internetlab",
+    designation: "internet-lab.nl",
     review: 5,
   },
   {
     id: 3,
-    title: "Layout and organized layers",
+    title: "Clear communication.",
     description:
-      "Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.",
-    avatar: Avatar3,
-    name: "Denny Hilguston",
-    designation: "@denny.hil",
+      "After discussing the wishes the first time, they went to work. And the result was beyond my expectations.",
+    avatar: martCircle,
+    name: "Mart E.",
+    designation: "Freelancer",
     review: 5,
   },
   {
     id: 4,
-    title: "Modern look & trending design",
+    title: "Exactly what we wished for",
     description:
-      "Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.",
-    avatar: Avatar4,
-    name: "Denny Hilguston",
-    designation: "@denny.hil",
-    review: 4,
+      "It was quick to build the website, and after just a few weeks our website was up and running.",
+    avatar: nextmeridianexpeditionCircle,
+    name: "Next Meridian Expedition",
+    designation: "@nextmeridian.expedition",
+    review: 5,
   },
 ];
 

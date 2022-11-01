@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui";
 import { Container, Box, Heading, Text, Image, Button } from "theme-ui";
-import BannerImg from "assets/banner-thumb.png";
+import BannerImg from "assets/mockup-amongcreatives.png";
 import ShapeLeft from "assets/shape-left.png";
 import ShapeRight from "assets/shape-right.png";
 import BrushStroke from "assets/stroke-yellow.svg";
@@ -12,7 +12,9 @@ export default function Banner() {
       <Container sx={styles.banner.container}>
         <Box sx={styles.banner.contentBox}>
           <Heading as="h1" variant="heroPrimary">
-            You make a<span sx={styles.banner.paintBrush}> positive impact</span>, let your website  make one too
+            You make a {/* <span sx={styles.banner.paintBrush}>  */}
+            positive impact
+            {/* </span> */}, let your website make one too
           </Heading>
           <Text as="p" variant="heroSecondary">
             Helping sustainable brands creating a bigger impact by developing
@@ -22,7 +24,7 @@ export default function Banner() {
         </Box>
 
         <Box sx={styles.banner.imageBox}>
-          <Image src={BannerImg} alt="banner" />
+          {/* <Image src={BannerImg} alt="banner" /> */}
         </Box>
       </Container>
     </section>
@@ -41,7 +43,7 @@ const styles = {
       bottom: 6,
       left: 0,
       height: "100%",
-      width: "100%",
+      width: "75%",
       zIndex: -1,
       backgroundImage: `url(${ShapeLeft})`,
       backgroundRepeat: `no-repeat`,
@@ -51,10 +53,10 @@ const styles = {
     "&::after": {
       position: "absolute",
       content: '""',
-      bottom: "40px",
+      bottom: "-10px",
       right: 0,
       height: "100%",
-      width: "100%",
+      width: "85%",
       zIndex: -1,
       backgroundImage: `url(${ShapeRight})`,
       backgroundRepeat: `no-repeat`,
@@ -66,6 +68,7 @@ const styles = {
       display: "flex",
       flexDirection: "column",
       justifyContent: "center",
+      maxWidth: "60vw",
     },
     contentBox: {
       width: ["100%", "90%", "535px", null, "57%", "60%", "68%", "60%"],
@@ -86,8 +89,8 @@ const styles = {
     paintBrush: {
       backgroundImage: `url(${BrushStroke})`,
       backgroundRepeat: `no-repeat`,
-      backgroundPosition: 'bottom',
-      backgroundSize: 'contain',
-    }
+      backgroundPosition: "bottom",
+      backgroundSize: "contain",
+    },
   },
 };
