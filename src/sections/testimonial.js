@@ -41,16 +41,16 @@ const data = [
     designation: "Freelancer",
     review: 5,
   },
-  {
-    id: 4,
-    title: "Exactly what we wished for",
-    description:
-      "It was quick to build the website, and after just a few weeks our website was up and running.",
-    avatar: nextmeridianexpeditionCircle,
-    name: "Next Meridian Expedition",
-    designation: "World travellers",
-    review: 5,
-  },
+  // {
+  //   id: 4,
+  //   title: "Exactly what we wished for",
+  //   description:
+  //     "It was quick to build the website, and after just a few weeks our website was up and running.",
+  //   avatar: nextmeridianexpeditionCircle,
+  //   name: "Next Meridian Expedition",
+  //   designation: "World travellers",
+  //   review: 5,
+  // },
 ];
 
 const responsive = {

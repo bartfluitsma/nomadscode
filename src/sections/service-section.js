@@ -16,10 +16,11 @@ import ModalVideo from "react-modal-video";
 import { IoIosPlay } from "react-icons/io";
 
 import ServiceThumb from "assets/growing-tree.png";
-import shapePattern from "assets/shape-pattern1.png";
+// import shapePattern from "assets/shape-pattern1.png";
+import shapePattern from "assets/colors-group.svg";
 
-import Smart from "assets/services/smart.svg";
-import Secure from "assets/services/secure.svg";
+import difference from "assets/icons/difference-no-shadow.svg";
+import Sustainability from "assets/icons/sustainability-no-shadow.svg";
 
 const data = {
   subTitle: "our goal",
@@ -27,18 +28,18 @@ const data = {
   features: [
     {
       id: 1,
-      imgSrc: Smart,
+      imgSrc: difference,
       altText: "Sustainability",
       title: "Making a difference",
       // text: "We work with companies, organisation, brands or businesses that are working on creating a better world.",
-      text: "We work with brands, businesses and organisations that are working ",
+      text: "By empowering sustainable brands, we help in creating a better world.",
     },
     {
       id: 2,
-      imgSrc: Secure,
+      imgSrc: Sustainability,
       altText: "Sustainability",
       title: "Sustainability",
-      text: "Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.",
+      text: "Fair-trade, organic, ethical. We only work with brands that have a positive impact on the planet & people.",
     },
   ],
 };
@@ -133,7 +134,7 @@ const styles = {
   shapeBox: {
     position: "absolute",
     bottom: -68,
-    left: -160,
+    left: -180,
     zIndex: -1,
     display: ["none", null, null, null, null, "inline-block"],
   },

@@ -11,22 +11,22 @@ const data = [
   {
     id: 1,
     title: "Discovery call",
-    text: "We'll talk about the goals and needs for your website, as well as the desired look and feel. ",
+    text: "We'll talk about the goals and needs of your website, as well as the desired look and feel.",
   },
   {
     id: 2,
     title: "Prototype",
-    text: "Based on our discovery call we, build a prototype for your to try out, and we'll implement any feedback you might have.",
+    text: "Based on our discovery call, we build a prototype for you to try out, and we'll implement any feedback.",
   },
   {
     id: 3,
     title: "Development",
-    text: "We will build an amazing website for you, based on the defined prototype. During this process we keep close contact about the progress.",
+    text: "We will build an amazing website for you, based on the defined prototype. During this process, we keep in close contact about the progress.",
   },
   {
     id: 4,
     title: "Deployment",
-    text: "The best part! We'll launch your website and it'll be available for the world to see. Awesome!",
+    text: "The best part! We'll launch your website, and it'll be available for the world to see. Awesome!",
   },
 ];
 
@@ -58,7 +58,7 @@ export default function WorkFlow() {
 
 const styles = {
   workflow: {
-    backgroundColor: "primary",
+    backgroundColor: "secondary",
     backgroundImage: `url(${PatternBG})`,
     backgroundRepeat: `no-repeat`,
     backgroundPosition: "center center",

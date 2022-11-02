@@ -1,4 +1,7 @@
 export default {
+  html: {
+    scrollBehavior: "smooth",
+  },
   // example colors with dark mode
   colors: {
     text: "#343D48", // body color and primary color
@@ -8,11 +11,11 @@ export default {
     background: "#FFFFFF", // body background color
     background_secondary: "#F9FBFD", // secondary background color
     border_color: "#E5ECF4", // border color
-    yellow: "#FFA740", // border color
-    primary: "#EA3A60", // primary button and link color
-    secondary: "#2563FF", // secondary color - can be used for hover states
+    yellow: "#E79F3E", // border color
+    primary: "#B12839", // primary button and link color 76B759
+    secondary: "#E79F3E", // secondary color - can be used for hover states
     muted: "#E4E4E4", // muted color
-    accent: "#609", // a contrast color for emphasizing UI
+    accent: "#245B47", // a contrast color for emphasizing UI
 
     // highlight	a background color for highlighting text
     modes: {

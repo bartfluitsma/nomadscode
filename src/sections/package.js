@@ -15,7 +15,7 @@ const packages = {
       name: "The Starter",
       description: "For when you're just starting out",
       buttonText: "Contact us",
-      priceWithUnit: "From € 399,-",
+      priceWithUnit: "From € 299,-",
       points: [
         {
           id: 1,
@@ -61,7 +61,7 @@ const packages = {
       id: 2,
       name: "Serious Business",
       description: "To take your business to the next level.",
-      priceWithUnit: "From € 799,-",
+      priceWithUnit: "From € 699,-",
       buttonText: "Contact us",
       // anotherOption: "Or Start 14 Days trail",
       points: [

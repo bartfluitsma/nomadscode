@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: 'https://startup-agency-modern.vercel.app',
+  siteUrl: "https://nomadscode.digital",
   generateRobotsTxt: true,
   // optional
   // robotsTxtOptions: {

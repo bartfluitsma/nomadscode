@@ -3,39 +3,40 @@ import { jsx } from "theme-ui";
 import { Container, Grid } from "theme-ui";
 import SectionHeader from "components/section-header";
 import FeatureCard from "components/feature-card.js";
-import Performance from "assets/feature/performance.svg";
-import Partnership from "assets/feature/partnership.svg";
-import Subscription from "assets/feature/subscription.svg";
-import Support from "assets/feature/support.svg";
+import Fast from "assets/icons/fast.svg";
+import Responsive from "assets/icons/responsive.svg";
+import UX from "assets/icons/user-experience.svg";
+import Custom from "assets/icons/custom-design.svg";
 
 const data = [
   {
     id: 1,
-    imgSrc: Performance,
+    imgSrc: Fast,
     altText: "Fast Performance",
     title: "Fast Performance",
-    text: "Let’s just get this out of the way - there will always be a kit version of Edu flow. Paid subscriptions allow us to continue helping learners around the world.",
-  },
+    text: "Fast loading speed is essential for web applications, and we make sure yours will be incredibly fast.",
+  }, // Don't let people wait.
   {
     id: 2,
-    imgSrc: Partnership,
+    imgSrc: Responsive,
     altText: "Responsive design",
     title: "Responsive design",
-    text: "We believe it’s important for everyone to have access to software – especially when it comes to digital learning be navigated by keyboard and screen readers.",
+    text: "Desktops, tablets, smartphones.. in all shapes and sizes. We will make sure your web application works on any device!",
   },
-  {
-    id: 3,
-    imgSrc: Subscription,
-    altText: "Great user experience",
-    title: "Great user experience",
-    text: "Let’s just get this out of the way - there will always be a kit version of Edu flow. Paid subscriptions allow us to continue helping learners around the world.",
-  },
+
   {
     id: 4,
-    imgSrc: Support,
-    altText: "Customer Support",
-    title: "Customer Support",
-    text: "We believe it’s important for everyone to have access to software – especially when it comes to digital learning be navigated by keyboard and screen readers.",
+    imgSrc: Custom,
+    altText: "Custom design",
+    title: "Custom design",
+    text: "We translate your unique brand style to your website so that visitors directly recognize your brand.",
+  }, //, which helps to build trust.
+  {
+    id: 3,
+    imgSrc: UX,
+    altText: "Great user experience",
+    title: "Great user experience",
+    text: "We will ensure your web application is accessible and easy to use, to keep your visitors happy and engaged.",
   },
 ];
 

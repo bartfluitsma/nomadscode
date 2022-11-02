@@ -21,15 +21,15 @@ export default function IndexPage() {
     <ThemeProvider theme={theme}>
       <StickyProvider>
         <Layout>
-          <SEO title="Startup Landing 005" />
+          <SEO title="Nomadscode | web development" />
           <Banner />
           <br />
           <TestimonialCard />
-          {/* <KeyFeature /> */}
           <ServiceSection />
           <Feature />
           <WorkFlow />
           <Package />
+          {/* <KeyFeature /> */}
           {/* <CoreFeature /> */}
           {/* <TeamSection /> */}
           {/* <BlogSection /> */}

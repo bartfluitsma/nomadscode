@@ -1,10 +1,10 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui";
 import { Container, Box, Heading, Text, Image, Button } from "theme-ui";
-import BannerImg from "assets/mockup-amongcreatives.png";
-import ShapeLeft from "assets/shape-left.png";
+import ShapeLeft from "assets/shape-left.svg";
 import ShapeRight from "assets/shape-right.png";
 import BrushStroke from "assets/stroke-yellow.svg";
+import ImageSwapper from 'components/imageSwapper';
 
 export default function Banner() {
   return (
@@ -20,11 +20,16 @@ export default function Banner() {
             Helping sustainable brands creating a bigger impact by developing
             high quality web-applications.
           </Text>
-          <Button variant="primary">Contact us</Button>
+          <a href="#contact">
+            <Button variant="primary">Contact us</Button>
+          </a>
+          <Button variant="secondary" sx={styles.banner.scheduleLink}>Schedule a call</Button>
         </Box>
 
         <Box sx={styles.banner.imageBox}>
           {/* <Image src={BannerImg} alt="banner" /> */}
+          {/* <Image src={BannerImgCoffee} alt="banner" /> */}
+          <ImageSwapper />
         </Box>
       </Container>
     </section>
@@ -68,7 +73,7 @@ const styles = {
       display: "flex",
       flexDirection: "column",
       justifyContent: "center",
-      maxWidth: "60vw",
+      maxWidth: ["100%", "90%", "60vw", null, "57%", "80%", "68%", "60vw"],
     },
     contentBox: {
       width: ["100%", "90%", "535px", null, "57%", "60%", "68%", "60%"],
@@ -92,5 +97,9 @@ const styles = {
       backgroundPosition: "bottom",
       backgroundSize: "contain",
     },
+    scheduleLink: {
+      marginLeft: '20px',
+      textDecoration: 'none',
+    }
   },
 };

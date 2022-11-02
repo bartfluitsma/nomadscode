@@ -5,9 +5,8 @@ import { Container, Flex, Box, Button, Input, Text, Heading } from "theme-ui";
 import { NetlifyForm, Honeypot } from "react-netlify-forms";
 
 export default function Contact() {
-  
   return (
-    <section>
+    <section id="contact">
       <Container>
         <Box sx={styles.contentBox}>
           <Box sx={styles.contentBoxInner}>
@@ -15,43 +14,78 @@ export default function Contact() {
               Contact Us
             </Heading>
             <Text as="p" sx={styles.description}>
-              Please use the form below to contact us or send a message to 
-              <a sx={styles.link} href="mailto:hello@nomadscode.digital"> hello@nomadscode.digital</a>
+              Please use the form below to contact us or send a message to
+              <a sx={styles.link} href="mailto:hello@nomadscode.digital">
+                {" "}
+                hello@nomadscode.digital
+              </a>
             </Text>
-            <NetlifyForm name="Contact" action="/thanks" honeypotName="bot-field">
-    {({ handleChange, success, error }) => (
-      <>
-        <Honeypot />
-        {success && <p>Thanks for contacting us!</p>}
-        {error && (
-          <p>Sorry, we could not reach our servers. Please try again later.</p>
-        )}
-        <div sx={styles.inputForm}>
-          {/* <label htmlFor="name">Name</label> */}
-          <input sx={styles.InputContainer} type="text" name="name" id="name" placeholder='Name' onChange={handleChange} />
-        </div>
-        <div sx={styles.inputForm}>
-          {/* <label htmlFor="name">Name</label> */}
-          <input sx={styles.InputContainer} type="email" name="email" id="email" placeholder='Email' required onChange={handleChange} />
-        </div>
-        <div sx={styles.inputForm}>
-          {/* <label htmlFor="message">Message</label> */}
-          <textarea sx={styles.InputContainer}
-            type="text"
-            name="message"
-            id="message"
-            rows="4"
-            onChange={handleChange}
-            required
-            placeholder='Message'
-          />
-        </div>
-        <div>
-          <button sx={styles.buttonForm} type="submit">Send message</button>
-        </div>
-      </>
-    )}
-  </NetlifyForm>
+            <br />
+            <NetlifyForm
+              name="Contact"
+              action="/thanks"
+              honeypotName="bot-field"
+            >
+              {({ handleChange, success, error }) => (
+                <>
+                  <Honeypot />
+                  {success && (
+                    <p sx={styles.formMessage}>Thanks for contacting us!</p>
+                  )}
+                  {error && (
+                    <p sx={styles.formMessage}>
+                      Sorry, we could not reach our servers. Please try again
+                      later.
+                    </p>
+                  )}
+                  {success || error ? null : (
+                    <>
+                      <div sx={styles.inputForm}>
+                        {/* <label htmlFor="name">Name</label> */}
+                        <input
+                          sx={styles.InputContainer}
+                          type="text"
+                          name="name"
+                          id="name"
+                          placeholder="Name"
+                          onChange={handleChange}
+                        />
+                      </div>
+                      <div sx={styles.inputForm}>
+                        {/* <label htmlFor="name">Name</label> */}
+                        <input
+                          sx={styles.InputContainer}
+                          type="email"
+                          name="email"
+                          id="email"
+                          placeholder="Email"
+                          required
+                          onChange={handleChange}
+                        />
+                      </div>
+                      <div sx={styles.inputForm}>
+                        {/* <label htmlFor="message">Message</label> */}
+                        <textarea
+                          sx={styles.InputContainer}
+                          type="text"
+                          name="message"
+                          id="message"
+                          rows="4"
+                          onChange={handleChange}
+                          required
+                          placeholder="Message"
+                        />
+                      </div>
+                      <div>
+                        <button sx={styles.buttonForm} type="submit">
+                          Send message
+                        </button>
+                      </div>
+                    </>
+                  )}
+                </>
+              )}
+            </NetlifyForm>
           </Box>
         </Box>
       </Container>
@@ -61,7 +95,7 @@ export default function Contact() {
 
 const styles = {
   contentBox: {
-    backgroundColor: "primary",
+    backgroundColor: "accent",
     textAlign: "center",
     borderRadius: 10,
     py: ["60px", null, 8],
@@ -122,31 +156,37 @@ const styles = {
     },
   },
   InputContainer: {
-    borderRadius: '10px',
-    minHeight: '40px',
-    padding: '15px 20px',
-    border: 'none',
-    minWidth: '100%',
-    margin: '10px 0px',
-    fontFamily: 'Lato'
+    borderRadius: "10px",
+    minHeight: "40px",
+    padding: "15px 20px",
+    border: "none",
+    minWidth: "100%",
+    margin: "10px 0px",
+    fontFamily: "Lato",
   },
   inputForm: {
-    display: 'grid',
-    textAlign: 'left',
-    fontFamily: 'Lato'
+    display: "grid",
+    textAlign: "left",
+    fontFamily: "Lato",
   },
   link: {
-    color: 'white'
+    color: "white",
   },
   buttonForm: {
-    backgroundColor: 'yellow',
-    color: 'white',
-    padding: '17px 30px',
-    border: 'none',
-    borderRadius: '20px',
-    cursor: 'pointer',
-    textTransform: 'uppercase',
-    letterSpacing: '1px',
-    fontWeight: '600',
+    backgroundColor: "yellow",
+    color: "white",
+    padding: "17px 30px",
+    border: "none",
+    borderRadius: "20px",
+    cursor: "pointer",
+    // textTransform: 'uppercase',
+    letterSpacing: "1px",
+    fontSize: "2",
+    marginTop: "10px",
+    // fontWeight: '600',
+  },
+  formMessage: {
+    color: "white",
+    fontSize: "4",
   },
 };
