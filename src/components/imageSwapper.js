@@ -15,7 +15,7 @@ export default function ImageSwapper() {
       } else {
         setCurrentIndex(1);
       }
-    }, 2000);
+    }, 2800);
 
     return () => clearInterval(intervalId);
   });

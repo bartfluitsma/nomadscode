@@ -24,6 +24,8 @@ export default function Banner() {
             <Button variant="primary">Contact us</Button>
           </a>
           <Button variant="secondary" sx={styles.banner.scheduleLink}>Schedule a call</Button>
+          <br />
+          <br />
         </Box>
 
         <Box sx={styles.banner.imageBox}>
@@ -73,7 +75,7 @@ const styles = {
       display: "flex",
       flexDirection: "column",
       justifyContent: "center",
-      maxWidth: ["100%", "90%", "60vw", null, "57%", "80%", "68%", "60vw"],
+      maxWidth: ["100%", "90%", "60vw", "70vw", "100%", "80%", "68%", "60vw"],
     },
     contentBox: {
       width: ["100%", "90%", "535px", null, "57%", "60%", "68%", "60%"],
@@ -88,7 +90,7 @@ const styles = {
       mb: [0, null, -6, null, null, "-40px", null, -3],
       img: {
         position: "relative",
-        height: [245, "auto"],
+        // height: [245, "auto"],
       },
     },
     paintBrush: {

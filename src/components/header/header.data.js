@@ -15,10 +15,10 @@ export default [
   //   path: "about",
   //   label: "About",
   // },
-  {
-    path: "projects",
-    label: "Projects",
-  },
+  // {
+  //   path: "projects",
+  //   label: "Projects",
+  // },
   {
     path: "pricing",
     label: "Pricing",

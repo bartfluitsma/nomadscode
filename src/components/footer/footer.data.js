@@ -38,10 +38,10 @@ export default {
       path: "#testimonial",
       label: "Testimonial",
     },
-    {
-      path: "#projects",
-      label: "Projects",
-    },
+    // {
+    //   path: "#projects",
+    //   label: "Projects",
+    // },
     {
       path: "#pricing",
       label: "Pricing",
